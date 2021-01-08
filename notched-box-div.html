@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Notched Box Div</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"
+    
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.css">
+
+  <style id="compiled-css" type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=Lato|Roboto:700");
+body {
+  height: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  color: #ffdebd;
+  margin: 1rem;
+  background: radial-gradient(circle farthest-corner, #333, #111);
+  height: 100vh;
+  overflow: hidden; }
+
+.module div {
+  --notchSize: 45px;
+  background: #202732;
+  padding: 3rem;
+  position: relative;
+  top: 2%;
+  left: 1%;
+  width: 98%;
+  height: 96%;
+  clip-path: polygon(0% 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize))); }
+  .module div.selected {
+    background: #4F6B86; }
+
+.module {
+  --notchSize: 45px;
+  width: 600px;
+  height: 245px;
+  background: #4F6B86;
+  clip-path: polygon(0% 0%, calc(100% - var(--notchSize)) 0%, 100% var(--notchSize), 100% 100%, var(--notchSize) 100%, 0% calc(100% - var(--notchSize))); }
+
+h2 {
+  color: white;
+  margin: 0 0 1rem 0;
+  font-family: 'Roboto', sans-serif; }
+
+p {
+  margin: 0; }
+
+input {
+  position: absolute;
+  top: 20px;
+  left: 5vw;
+  width: 90vw; }
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+
+</head>
+<body>
+    <div class="module">
+  <div>
+  <h2>I'm a notched module.</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi minima neque sapiente itaque quos, mollitia facere earum laborum maxime vero voluptate repellendus quidem libero porro blanditiis obcaecati. Accusantium, sequi expedita.</p>
+  </div>
+  </div>
+
+<input type="range" min="0" max="50" value="43">
+
+
+    <script type="text/javascript">//<![CDATA[
+
+
+var inp = document.querySelector("input");
+var mod = document.querySelector(".module");
+
+inp.addEventListener("input", function() {
+  mod.style.setProperty("--notchSize", this.value + "px");
+});
+
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "ucrsg9jh"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>
